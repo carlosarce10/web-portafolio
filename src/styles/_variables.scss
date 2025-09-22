@@ -1,0 +1,54 @@
+﻿:root {
+  /* Paleta oscura / acentos rojizos */
+  --primary: #be123c;     /* rose-600 */
+  --primary-600: #9f1239; /* rose-700 */
+  --accent: #e11d48;      /* rose-600/700 mix */
+
+  --bg-primary: #0a0f1a;  /* azul oscuro */
+  --bg-secondary: #0d1220;
+  --text-primary: #e6edf3;
+  --text-secondary: #9aa5b1;
+  --border: #1f2937;
+
+  /* Glass */
+  --glass-bg: 15 23 42;
+  --glass-alpha: .35;
+
+  /* UI */
+  --radius: 14px;
+  --shadow: 0 10px 25px -12px rgba(0,0,0,.45);
+  --shadow-lg: 0 35px 60px -15px rgba(0,0,0,.55);
+  --blur: 16px;
+  --transition: all .25s ease;
+
+  /* Degradado global sutil (oscuro) */
+  --bg-grad-a: #0b1220;
+  --bg-grad-b: #0f172a;
+  --bg-grad-c: #111827;
+  --bg-grad-d: #0b1220;
+
+  /* Colores de blobs (oscuros) */
+  --blob-a: #1f2937; /* slate-800 */
+  --blob-b: #312e81; /* indigo-900 */
+  --blob-c: #7f1d1d; /* red-900 */
+}
+
+[data-theme='light'] {
+  --glass-bg: 255 255 255;
+  --glass-alpha: .6;
+
+  --bg-primary: #fafafa;
+  --bg-secondary: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border: #e5e7eb;
+
+  --bg-grad-a: #fff1f2;
+  --bg-grad-b: #ffe4e6;
+  --bg-grad-c: #fce7f3;
+  --bg-grad-d: #fef2f2;
+
+  --blob-a: #fecaca; /* soft red */
+  --blob-b: #e9d5ff; /* soft purple */
+  --blob-c: #fde68a; /* soft yellow */
+}

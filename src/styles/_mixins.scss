@@ -1,0 +1,26 @@
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@mixin glass($bg: var(--glass-bg), $alpha: var(--glass-alpha), $radius: var(--radius), $blur: var(--blur)) {
+  background: rgba($bg, $alpha);
+  backdrop-filter: blur($blur);
+  border: 1px solid color-mix(in oklab, rgb($bg) 30%, #ffffff2a);
+  border-radius: $radius;
+  box-shadow: var(--shadow);
+}
+
+@mixin hover-lift {
+  transition: var(--transition);
+  &:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+}
+
+@mixin focus-ring($color: var(--accent)) {
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px color-mix(in oklab, #fff 70%, transparent),
+                0 0 0 5px $color;
+  }
+}

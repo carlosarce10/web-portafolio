@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Hola, soy",
+    "subtitle": "Desarrollador Full Stack especializado en React y Vue.",
+    "ctaProjects": "Ver Proyectos",
+    "download": "Descargar CV",
+    "ctaDownload": "Descarga simulada del CV",
+    "pitchTitle": "¿Buscas alguien para tu próximo proyecto?",
+    "pitchBody": "Me enfoco en crear productos rápidos, accesibles y con una UX pulida.",
+    "pitchCta": "Hablemos"
+  },
+  "skills": {
+    "title": "Habilidades Técnicas"
+  }
+}

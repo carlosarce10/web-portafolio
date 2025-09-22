@@ -1,0 +1,33 @@
+{
+  "name": "my-portafolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.1",
+    "@tanstack/react-query": "^5.84.2",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.23.12",
+    "i18next": "^25.3.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.62.0",
+    "react-i18next": "^15.6.1",
+    "react-router-dom": "^7.8.0",
+    "zod": "^4.0.16",
+    "zustand": "^5.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "sass": "^1.90.0",
+    "typescript": "^5.9.2",
+    "vite": "^5.4.19"
+  }
+}
