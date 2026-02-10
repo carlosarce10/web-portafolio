@@ -3,19 +3,75 @@
     "home": "Inicio",
     "projects": "Proyectos",
     "skills": "Habilidades",
+    "experience": "Experiencia",
+    "education": "Educación",
     "contact": "Contacto"
   },
   "home": {
     "title": "Hola, soy",
-    "subtitle": "Desarrollador Full Stack especializado en React y Vue.",
+    "role": "Frontend Web Developer",
+    "subtitle": "Soy un desarrollador frontend especializado en Vue 2 y Vue 3 con experiencia en planificación, gestión y migración de sistemas web. Tengo habilidades en la mejora de UI con componentes personalizados utilizando herramientas como Vuetify 3 y Bootstrap 5. He sido responsable del control de versiones con GitHub y gestión de proyectos Scrum.",
     "ctaProjects": "Ver Proyectos",
     "download": "Descargar CV",
     "ctaDownload": "Descarga simulada del CV",
     "pitchTitle": "¿Buscas alguien para tu próximo proyecto?",
-    "pitchBody": "Me enfoco en crear productos rápidos, accesibles y con una UX pulida.",
+    "pitchBody": "Me enfoco en crear productos rápidos, accesibles y con una UX pulida, utilizando las últimas tecnologías como Vue 3, React y TypeScript.",
     "pitchCta": "Hablemos"
   },
   "skills": {
     "title": "Habilidades Técnicas"
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "jobs": {
+      "ikusi": {
+        "role": "Frontend Web Developer",
+        "date": "Marzo 2024 - Presente",
+        "company": "IKUSI S.A. de C.V",
+        "desc": "Planificación, gestión y migración de un sistema web realizado en Vue 2 a Vue 3 haciendo uso de herramientas tales como composition API, Pinia y vite. Mejora de la UI implementando componentes personalizados de Vuetify 3. Responsable de la administración de control de versiones del frontend con Github. Uso de metodología Scrum con Jira."
+      },
+      "taag": {
+        "role": "Frontend Web Developer",
+        "date": "Noviembre 2022 - Marzo 2024",
+        "company": "TAAG GENETICS S.A. de C.V",
+        "desc": "Colaboré en el desarrollo de un sistema web en Vue 2, utilizando Vuetify para el diseño responsivo. Consumí APIs con AXIOS y AJAX. Implementé Vuex, Vue Router y I18n. Diseñé mockups con Figma. Control de versiones con GitHub y pruebas con Postman."
+      },
+      "tdm": {
+        "role": "Fullstack Web Developer",
+        "date": "Octubre 2021 - Noviembre 2022",
+        "company": "TDM INTERNACIONAL S.A. de C.V",
+        "desc": "Desarrollo de sistema web utilizando Vue 2 con TypeScript. Gestión de control de versiones con Bitbucket (trunk-based) y metodología SCRUM. Patrón MVC y Clean Architecture. Servicios backend con Node.js y Express, base de datos PostgreSQL."
+      },
+      "exos": {
+        "role": "Frontend Web Developer",
+        "date": "Agosto 2020 - Enero 2021",
+        "company": "EXOS TECHNOLOGY S.A. de C.V",
+        "desc": "Desarrollo de sistema web responsivo con Quasar Framework. Validación de formularios con Vuelidate y consumo de APIs con Axios. Uso de GitHub y Trello con metodología SCRUM. Implementación de patrón MVC."
+      }
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "degree": "Ingeniería en gestión y desarrollo de software",
+    "school": "Universidad Tecnológica Emiliano Zapata",
+    "date": "2018 - 2022"
+  },
+  "projects": {
+    "p1": {
+      "title": "Vuejs 2 con TS",
+      "desc": "Proyecto de prueba técnica desarrollado con Vue 2 y TypeScript, demostrando arquitectura y buenas prácticas."
+    },
+    "p2": {
+      "title": "Pokemon Game",
+      "desc": "Juego interactivo de Pokemon desarrollado con la última versión de Vue 3."
+    },
+    "p3": {
+      "title": "Veterinaria Citas",
+      "desc": "Aplicación para la gestión de citas veterinarias desarrollada con React y Hooks."
+    },
+    "p4": {
+      "title": "Control de Gastos",
+      "desc": "Aplicación de control de presupuesto y gastos para la gestión financiera personal."
+    }
   }
 }

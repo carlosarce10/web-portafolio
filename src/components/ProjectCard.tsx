@@ -1,20 +1,21 @@
 ﻿import React from 'react';
 import { motion } from 'framer-motion';
 import Button from './ui/Button';
+import { useTranslation } from 'react-i18next';
 
 export type Project = {
   id: number;
-  title: string;
-  description: string;
-  image: string;
-  technologies: string[];
-  demo: string;
-  github: string;
+  i18nKey: string;
+  img: string;
+  tags: string[];
+  link?: string;
+  github?: string;
 };
 
 type Props = { project: Project; delay?: number };
 
 export default function ProjectCard({ project, delay = 0 }: Props) {
+  const { t } = useTranslation();
   const cardRef = React.useRef<HTMLDivElement | null>(null);
   const [tilt, setTilt] = React.useState({ rx: 0, ry: 0 });
 
@@ -50,8 +51,8 @@ export default function ProjectCard({ project, delay = 0 }: Props) {
     >
       <div style={{ position: 'relative' }}>
         <img
-          src={project.image}
-          alt={project.title}
+          src={project.img}
+          alt={t(`projects.${project.i18nKey}.title`)}
           style={{ width: '100%', height: 200, objectFit: 'cover', transform: 'translateZ(20px)' }}
         />
         <div
@@ -70,22 +71,28 @@ export default function ProjectCard({ project, delay = 0 }: Props) {
             transition: 'opacity .25s',
           }}
         >
-          <Button as="a" href={project.demo} target="_blank" rel="noreferrer" variant="primary" size="sm">
-            Demo
-          </Button>
-          <Button as="a" href={project.github} target="_blank" rel="noreferrer" variant="secondary" size="sm">
-            GitHub
-          </Button>
+          {project.link && (
+            <Button onClick={() => window.open(project.link, '_blank')} variant="primary" size="sm">
+              Demo
+            </Button>
+          )}
+          {project.github && (
+            <Button onClick={() => window.open(project.github, '_blank')} variant="secondary" size="sm">
+              GitHub
+            </Button>
+          )}
         </div>
       </div>
 
       <div style={{ padding: '1rem 1.2rem' }}>
-        <h3 style={{ margin: '0 0 .4rem' }}>{project.title}</h3>
-        <p style={{ color: 'var(--text-secondary)', margin: '0 0 .8rem' }}>{project.description}</p>
+        <h3 style={{ margin: '0 0 .4rem' }}>{t(`projects.${project.i18nKey}.title`)}</h3>
+        <p style={{ color: 'var(--text-secondary)', margin: '0 0 .8rem' }}>
+          {t(`projects.${project.i18nKey}.desc`)}
+        </p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '.5rem' }}>
-          {project.technologies.map((t) => (
+          {project.tags.map((tag) => (
             <span
-              key={t}
+              key={tag}
               style={{
                 background: 'var(--primary)',
                 color: '#fff',
@@ -95,7 +102,7 @@ export default function ProjectCard({ project, delay = 0 }: Props) {
                 transform: 'translateZ(30px)',
               }}
             >
-              {t}
+              {tag}
             </span>
           ))}
         </div>

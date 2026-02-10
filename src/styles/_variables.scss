@@ -35,20 +35,20 @@
 
 [data-theme='light'] {
   --glass-bg: 255 255 255;
-  --glass-alpha: .6;
+  --glass-alpha: .75; /* Más opaco/blanco */
 
-  --bg-primary: #fafafa;
-  --bg-secondary: #ffffff;
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --border: #e5e7eb;
+  --bg-primary: #ffffff; /* Blanco puro */
+  --bg-secondary: #f8fafc; /* Gris slate muy claro */
+  --text-primary: #1e293b; /* Slate 800 */
+  --text-secondary: #64748b; /* Slate 500 */
+  --border: #f1f5f9; /* Slate 100 */
 
-  --bg-grad-a: #fff1f2;
-  --bg-grad-b: #ffe4e6;
-  --bg-grad-c: #fce7f3;
-  --bg-grad-d: #fef2f2;
+  --bg-grad-a: #ffffff;
+  --bg-grad-b: #f0fdf4; /* Verde muy suave */
+  --bg-grad-c: #eff6ff; /* Azul muy suave */
+  --bg-grad-d: #fff1f2; /* Rojo muy suave */
 
-  --blob-a: #fecaca; /* soft red */
-  --blob-b: #e9d5ff; /* soft purple */
-  --blob-c: #fde68a; /* soft yellow */
+  --blob-a: #fee2e2; /* Red 100 */
+  --blob-b: #e0e7ff; /* Indigo 100 */
+  --blob-c: #dcfce7; /* Green 100 */
 }
