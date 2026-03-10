@@ -9,69 +9,126 @@
   },
   "home": {
     "title": "Hola, soy",
-    "role": "Frontend Web Developer",
-    "subtitle": "Soy un desarrollador frontend especializado en Vue 2 y Vue 3 con experiencia en planificación, gestión y migración de sistemas web. Tengo habilidades en la mejora de UI con componentes personalizados utilizando herramientas como Vuetify 3 y Bootstrap 5. He sido responsable del control de versiones con GitHub y gestión de proyectos Scrum.",
+    "role": "Frontend Engineer | Vue.js Specialist",
+    "subtitle": "Frontend Engineer con más de 4 años de experiencia desarrollando aplicaciones web escalables, especializado en Vue.js y arquitecturas frontend modernas. Experto en migraciones Vue 2 → Vue 3, Composition API, Pinia y Screaming Architecture. Uso herramientas de IA para acelerar el desarrollo y la optimización de código.",
     "ctaProjects": "Ver Proyectos",
     "download": "Descargar CV",
     "ctaDownload": "Descarga simulada del CV",
-    "pitchTitle": "¿Buscas alguien para tu próximo proyecto?",
-    "pitchBody": "Me enfoco en crear productos rápidos, accesibles y con una UX pulida, utilizando las últimas tecnologías como Vue 3, React y TypeScript.",
-    "pitchCta": "Hablemos"
+    "pitchTitle": "¿Buscas a alguien para tu próximo proyecto?",
+    "pitchBody": "Me enfoco en crear productos rápidos, accesibles y con una UX pulida, usando Vue 3, React, TypeScript y arquitecturas frontend escalables.",
+    "pitchCta": "Hablemos",
+    "highlightsTitle": "Technical Highlights",
+    "highlights": [
+      "Arquitectura frontend basada en Screaming Architecture",
+      "Migración de Vue 2 a Vue 3",
+      "Implementación de Composition API y Pinia",
+      "Desarrollo de componentes reutilizables",
+      "Integración con APIs REST",
+      "Optimización de estructura y escalabilidad de proyectos",
+      "Uso de IA para generación y optimización de código"
+    ]
   },
   "skills": {
-    "title": "Habilidades Técnicas"
+    "title": "Habilidades Técnicas",
+    "categories": [
+      {
+        "title": "Frontend",
+        "items": ["Vue.js", "React", "JavaScript", "TypeScript", "HTML5", "CSS3", "SCSS"]
+      },
+      {
+        "title": "Frameworks & UI",
+        "items": ["Vuetify", "Quasar", "Bootstrap", "Semantic UI"]
+      },
+      {
+        "title": "State Management & Architecture",
+        "items": ["Vuex", "Pinia", "Composition API", "Vue Router", "Screaming Architecture", "MVC", "Clean Architecture"]
+      },
+      {
+        "title": "Backend",
+        "items": ["Node.js", "Express", "MySQL", "MongoDB", "Python"]
+      },
+      {
+        "title": "Tools",
+        "items": ["GitHub", "GitLab", "Bitbucket", "Postman", "Figma", "Jira", "Trello"]
+      },
+      {
+        "title": "Methodologies",
+        "items": ["SCRUM", "Trunk-based development", "BEMIT"]
+      }
+    ]
   },
   "experience": {
     "title": "Experiencia Laboral",
     "jobs": {
       "ikusi": {
-        "role": "Frontend Web Developer",
-        "date": "Marzo 2024 - Presente",
-        "company": "IKUSI S.A. de C.V",
-        "desc": "Planificación, gestión y migración de un sistema web realizado en Vue 2 a Vue 3 haciendo uso de herramientas tales como composition API, Pinia y vite. Mejora de la UI implementando componentes personalizados de Vuetify 3. Responsable de la administración de control de versiones del frontend con Github. Uso de metodología Scrum con Jira."
+        "role": "Frontend Engineer",
+        "date": "Marzo 2024 – Presente",
+        "company": "IKUSI S.A. de C.V.",
+        "desc": "Responsable del desarrollo y arquitectura del frontend en sistemas web empresariales. Lideré la migración de Vue 2 a Vue 3 con Composition API, Pinia y Vite. Diseñé la estructura del proyecto aplicando Screaming Architecture. Implementé componentes reutilizables en Vuetify 3 y administré el control de versiones con GitHub. Uso de IA para acelerar desarrollo y refactorización. Metodología SCRUM con Jira."
       },
       "taag": {
         "role": "Frontend Web Developer",
-        "date": "Noviembre 2022 - Marzo 2024",
-        "company": "TAAG GENETICS S.A. de C.V",
-        "desc": "Colaboré en el desarrollo de un sistema web en Vue 2, utilizando Vuetify para el diseño responsivo. Consumí APIs con AXIOS y AJAX. Implementé Vuex, Vue Router y I18n. Diseñé mockups con Figma. Control de versiones con GitHub y pruebas con Postman."
+        "date": "Noviembre 2022 – Marzo 2024",
+        "company": "TAAG Genetics S.A. de C.V.",
+        "desc": "Desarrollo de interfaces web con Vue 2 y Vuetify. Integración de APIs REST con Axios y AJAX. Implementación de Vuex, Vue Router e i18n para soporte multilenguaje. Diseño de mockups en Figma y pruebas de APIs con Postman."
       },
       "tdm": {
         "role": "Fullstack Web Developer",
-        "date": "Octubre 2021 - Noviembre 2022",
-        "company": "TDM INTERNACIONAL S.A. de C.V",
-        "desc": "Desarrollo de sistema web utilizando Vue 2 con TypeScript. Gestión de control de versiones con Bitbucket (trunk-based) y metodología SCRUM. Patrón MVC y Clean Architecture. Servicios backend con Node.js y Express, base de datos PostgreSQL."
+        "date": "Octubre 2021 – Noviembre 2022",
+        "company": "TDM Internacional S.A. de C.V.",
+        "desc": "Desarrollo de aplicaciones web con Vue 2 y TypeScript. Servicios backend con Node.js, Express y node-postgres. Gestión de versiones con Bitbucket (trunk-based development). Aplicación de Clean Architecture y patrón MVC."
       },
       "exos": {
         "role": "Frontend Web Developer",
-        "date": "Agosto 2020 - Enero 2021",
-        "company": "EXOS TECHNOLOGY S.A. de C.V",
-        "desc": "Desarrollo de sistema web responsivo con Quasar Framework. Validación de formularios con Vuelidate y consumo de APIs con Axios. Uso de GitHub y Trello con metodología SCRUM. Implementación de patrón MVC."
+        "date": "Agosto 2020 – Enero 2021",
+        "company": "EXOS Technology S.A. de C.V.",
+        "desc": "Desarrollo de interfaces responsivas con Quasar Framework (mobile-first). Validación de formularios con Vuelidate y consumo de APIs con Axios. Control de versiones con GitHub y gestión de tareas con Trello bajo SCRUM."
+      },
+      "freelance": {
+        "role": "Creative Developer / Brand Designer",
+        "date": "2024 – Presente",
+        "company": "Freelance",
+        "desc": "Desarrollo de identidad visual, branding y diseño de logotipos para clientes independientes. Creación de material publicitario utilizando Figma y herramientas de IA generativa. Integración de diseño visual y tecnología para identidades de marca modernas y atractivas."
       }
     }
   },
   "education": {
     "title": "Educación",
-    "degree": "Ingeniería en gestión y desarrollo de software",
+    "degree": "Ingeniería en Gestión y Desarrollo de Software",
     "school": "Universidad Tecnológica Emiliano Zapata",
-    "date": "2018 - 2022"
+    "date": "2018 – 2022"
   },
   "projects": {
     "p1": {
-      "title": "Vuejs 2 con TS",
-      "desc": "Proyecto de prueba técnica desarrollado con Vue 2 y TypeScript, demostrando arquitectura y buenas prácticas."
+      "title": "Vue 2 + TypeScript",
+      "desc": "Prueba técnica desarrollada con Vue 2 y TypeScript demostrando arquitectura limpia y buenas prácticas de código."
     },
     "p2": {
       "title": "Pokemon Game",
-      "desc": "Juego interactivo de Pokemon desarrollado con la última versión de Vue 3."
+      "desc": "Juego interactivo de Pokemon desarrollado con Vue 3, Composition API y consumo de PokéAPI."
     },
     "p3": {
       "title": "Veterinaria Citas",
-      "desc": "Aplicación para la gestión de citas veterinarias desarrollada con React y Hooks."
+      "desc": "Aplicación para gestión de citas veterinarias con React, Hooks y almacenamiento en LocalStorage."
     },
     "p4": {
       "title": "Control de Gastos",
-      "desc": "Aplicación de control de presupuesto y gastos para la gestión financiera personal."
+      "desc": "App de control de presupuesto y gastos para gestión financiera personal. Permite registrar ingresos, egresos y visualizar el balance en tiempo real. Desarrollada con React y Hooks."
+    },
+    "p5": {
+      "title": "Gym Train",
+      "desc": "Aplicación web para el registro y seguimiento de rutinas de entrenamiento. Permite crear sesiones, registrar ejercicios, series y repeticiones para llevar un control detallado del progreso físico. Desarrollada con React."
     }
+  },
+  "contact": {
+    "title": "Contacto",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Tu email",
+    "messagePlaceholder": "Tu mensaje",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando…",
+    "successTitle": "¡Mensaje enviado!",
+    "successBody": "Gracias por contactarme. Te responderé lo antes posible.",
+    "errorBody": "Ocurrió un error al enviar el mensaje. Por favor intenta de nuevo."
   }
 }

@@ -1,63 +1,64 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
+const jobTags: Record<string, string[]> = {
+  ikusi:     ['Vue 3', 'Composition API', 'Pinia', 'Vite', 'Vuetify 3', 'GitHub', 'Scrum', 'IA Tools'],
+  taag:      ['Vue 2', 'Vuetify', 'Vuex', 'Vue Router', 'Axios', 'i18n', 'Figma', 'Postman'],
+  tdm:       ['Vue 2', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL', 'Clean Architecture', 'MVC', 'Bitbucket'],
+  exos:      ['Quasar', 'Vue', 'Vuelidate', 'Axios', 'Scrum', 'Trello', 'GitHub'],
+  freelance: ['Figma', 'Branding', 'IA Generativa', 'Identidad Visual', 'Diseño Publicitario'],
+};
+
+const jobs = ['ikusi', 'taag', 'tdm', 'exos', 'freelance'] as const;
+
 export default function Experience() {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
-    const jobs = ['ikusi', 'taag', 'tdm', 'exos'];
+  return (
+    <div>
+      <h3 className="c-section-heading">{t('experience.title')}</h3>
 
-    return (
-        <div style={{ marginTop: '4rem' }}>
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '2rem', color: 'var(--primary)' }}>
-                {t('experience.title')}
-            </h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                {jobs.map((job, index) => (
-                    <motion.div
-                        key={job}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
-                        style={{
-                            borderLeft: '2px solid var(--primary)',
-                            paddingLeft: '1.5rem',
-                            position: 'relative',
-                        }}
-                    >
-                        {/* Dot indicador */}
-                        <div
-                            style={{
-                                position: 'absolute',
-                                left: '-6px',
-                                top: '0',
-                                width: '10px',
-                                height: '10px',
-                                borderRadius: '50%',
-                                background: 'var(--primary)',
-                            }}
-                        />
-
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                            <h4 style={{ margin: 0, fontSize: '1.2rem', color: '#fff' }}>
-                                {t(`experience.jobs.${job}.role`)}
-                            </h4>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
-                                <span style={{ color: 'var(--primary)', fontWeight: 500 }}>
-                                    {t(`experience.jobs.${job}.company`)}
-                                </span>
-                                <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                                    {t(`experience.jobs.${job}.date`)}
-                                </span>
-                            </div>
-                            <p style={{ margin: '0.5rem 0 0', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
-                                {t(`experience.jobs.${job}.desc`)}
-                            </p>
-                        </div>
-                    </motion.div>
-                ))}
+      <div className="c-timeline">
+        {jobs.map((job, index) => (
+          <motion.div
+            key={job}
+            className="c-timeline__item"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+            <div className="c-timeline__dot">
+              {String(index + 1).padStart(2, '0')}
             </div>
-        </div>
-    );
+
+            <div className="c-timeline__card">
+              <div className="c-timeline__header">
+                <h4 className="c-timeline__role">
+                  {t(`experience.jobs.${job}.role`)}
+                </h4>
+                <span className="c-timeline__date">
+                  {t(`experience.jobs.${job}.date`)}
+                </span>
+              </div>
+
+              <p className="c-timeline__company">
+                {t(`experience.jobs.${job}.company`)}
+              </p>
+
+              <p className="c-timeline__desc">
+                {t(`experience.jobs.${job}.desc`)}
+              </p>
+
+              <div className="c-timeline__tags">
+                {jobTags[job].map(tag => (
+                  <span key={tag} className="c-timeline__tag">{tag}</span>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
 }

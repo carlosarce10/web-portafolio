@@ -9,44 +9,86 @@
   },
   "home": {
     "title": "Hi, I'm",
-    "role": "Frontend Web Developer",
-    "subtitle": "I am a frontend developer specialized in Vue 2 and Vue 3 with experience in planning, management, and web system migration. I have skills in UI improvement with custom components using tools like Vuetify 3 and Bootstrap 5. I have been responsible for version control with GitHub and Scrum project management.",
+    "role": "Frontend Engineer | Vue.js Specialist",
+    "subtitle": "Frontend Engineer with 4+ years building scalable web applications, specialized in Vue.js and modern frontend architectures. Expert in Vue 2 → Vue 3 migrations, Composition API, Pinia and Screaming Architecture. I use AI tools to accelerate development and code optimization.",
     "ctaProjects": "View Projects",
     "download": "Download CV",
     "ctaDownload": "Simulated CV download",
     "pitchTitle": "Looking for someone for your next project?",
-    "pitchBody": "I focus on creating fast, accessible products with polished UX, using the latest technologies like Vue 3, React, and TypeScript.",
-    "pitchCta": "Let's Talk"
+    "pitchBody": "I focus on building fast, accessible products with polished UX using Vue 3, React, TypeScript and scalable frontend architectures.",
+    "pitchCta": "Let's Talk",
+    "highlightsTitle": "Technical Highlights",
+    "highlights": [
+      "Frontend architecture based on Screaming Architecture",
+      "Vue 2 to Vue 3 migration",
+      "Composition API and Pinia implementation",
+      "Reusable component development",
+      "REST API integration",
+      "Project structure and scalability optimization",
+      "AI tools for code generation and optimization"
+    ]
   },
   "skills": {
-    "title": "Technical Skills"
+    "title": "Technical Skills",
+    "categories": [
+      {
+        "title": "Frontend",
+        "items": ["Vue.js", "React", "JavaScript", "TypeScript", "HTML5", "CSS3", "SCSS"]
+      },
+      {
+        "title": "Frameworks & UI",
+        "items": ["Vuetify", "Quasar", "Bootstrap", "Semantic UI"]
+      },
+      {
+        "title": "State Management & Architecture",
+        "items": ["Vuex", "Pinia", "Composition API", "Vue Router", "Screaming Architecture", "MVC", "Clean Architecture"]
+      },
+      {
+        "title": "Backend",
+        "items": ["Node.js", "Express", "MySQL", "MongoDB", "Python"]
+      },
+      {
+        "title": "Tools",
+        "items": ["GitHub", "GitLab", "Bitbucket", "Postman", "Figma", "Jira", "Trello"]
+      },
+      {
+        "title": "Methodologies",
+        "items": ["SCRUM", "Trunk-based development", "BEMIT"]
+      }
+    ]
   },
   "experience": {
     "title": "Work Experience",
     "jobs": {
       "ikusi": {
-        "role": "Frontend Web Developer",
-        "date": "March 2024 - Present",
-        "company": "IKUSI S.A. de C.V",
-        "desc": "Planning, management, and migration of a web system from Vue 2 to Vue 3 using tools such as Composition API, Pinia, and Vite. UI improvement implementing custom Vuetify 3 components. Responsible for frontend version control administration with GitHub. Use of Scrum methodology with Jira."
+        "role": "Frontend Engineer",
+        "date": "March 2024 – Present",
+        "company": "IKUSI S.A. de C.V.",
+        "desc": "Responsible for frontend development and architecture in enterprise web systems. Led migration from Vue 2 to Vue 3 using Composition API, Pinia and Vite. Designed project structure applying Screaming Architecture. Built reusable components with Vuetify 3 and managed version control via GitHub. Used AI tools to accelerate development. SCRUM methodology with Jira."
       },
       "taag": {
         "role": "Frontend Web Developer",
-        "date": "November 2022 - March 2024",
-        "company": "TAAG GENETICS S.A. de C.V",
-        "desc": "Collaborated on the development of a web system in Vue 2, using Vuetify for responsive design. Consumed APIs with AXIOS and AJAX. Implemented Vuex, Vue Router, and I18n. Designed mockups with Figma. Version control with GitHub and testing with Postman."
+        "date": "November 2022 – March 2024",
+        "company": "TAAG Genetics S.A. de C.V.",
+        "desc": "Web interface development using Vue 2 and Vuetify. REST API integration with Axios and AJAX. Implemented Vuex, Vue Router and i18n for multilanguage support. Mockup design in Figma and API testing with Postman."
       },
       "tdm": {
         "role": "Fullstack Web Developer",
-        "date": "October 2021 - November 2022",
-        "company": "TDM INTERNACIONAL S.A. de C.V",
-        "desc": "Web system development using Vue 2 with TypeScript. Version control management with Bitbucket (trunk-based) and SCRUM methodology. MVC pattern and Clean Architecture. Backend services with Node.js and Express, PostgreSQL database."
+        "date": "October 2021 – November 2022",
+        "company": "TDM Internacional S.A. de C.V.",
+        "desc": "Web application development with Vue 2 and TypeScript. Backend services with Node.js, Express and node-postgres. Version control via Bitbucket with trunk-based development. Applied Clean Architecture and MVC pattern."
       },
       "exos": {
         "role": "Frontend Web Developer",
-        "date": "August 2020 - January 2021",
-        "company": "EXOS TECHNOLOGY S.A. de C.V",
-        "desc": "Responsive web system development with Quasar Framework. Form validation with Vuelidate and API consumption with Axios. Use of GitHub and Trello with SCRUM methodology. Implementation of MVC pattern."
+        "date": "August 2020 – January 2021",
+        "company": "EXOS Technology S.A. de C.V.",
+        "desc": "Responsive interface development with Quasar Framework (mobile-first). Form validation with Vuelidate and API consumption with Axios. Version control with GitHub and task management with Trello under SCRUM."
+      },
+      "freelance": {
+        "role": "Creative Developer / Brand Designer",
+        "date": "2024 – Present",
+        "company": "Freelance",
+        "desc": "Visual identity development, branding and logo design for independent clients. Creation of advertising materials using Figma and generative AI tools. Integration of visual design and technology to build modern, compelling brand identities."
       }
     }
   },
@@ -54,24 +96,39 @@
     "title": "Education",
     "degree": "Software Management and Development Engineering",
     "school": "Universidad Tecnológica Emiliano Zapata",
-    "date": "2018 - 2022"
+    "date": "2018 – 2022"
   },
   "projects": {
     "p1": {
-      "title": "Vuejs 2 with TS",
-      "desc": "Technical test project developed with Vue 2 and TypeScript, demonstrating architecture and best practices."
+      "title": "Vue 2 + TypeScript",
+      "desc": "Technical test project built with Vue 2 and TypeScript showcasing clean architecture and coding best practices."
     },
     "p2": {
       "title": "Pokemon Game",
-      "desc": "Interactive Pokemon game developed with the latest version of Vue 3."
+      "desc": "Interactive Pokemon game built with Vue 3, Composition API and PokéAPI integration."
     },
     "p3": {
       "title": "Veterinary Appointments",
-      "desc": "Veterinary appointment management application developed with React and Hooks."
+      "desc": "Veterinary appointment management app built with React, Hooks and LocalStorage."
     },
     "p4": {
       "title": "Expense Tracker",
-      "desc": "Budget and expense control application for personal financial management."
+      "desc": "Budget and expense control app for personal financial management. Allows tracking income and expenses and visualizing the real-time balance. Built with React and Hooks."
+    },
+    "p5": {
+      "title": "Gym Train",
+      "desc": "Web app for logging and tracking workout routines. Create sessions, record exercises, sets and reps to keep a detailed log of physical progress. Built with React."
     }
+  },
+  "contact": {
+    "title": "Contact",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "Your message",
+    "send": "Send Message",
+    "sending": "Sending…",
+    "successTitle": "Message sent!",
+    "successBody": "Thanks for reaching out. I'll get back to you as soon as possible.",
+    "errorBody": "Something went wrong. Please try again."
   }
 }

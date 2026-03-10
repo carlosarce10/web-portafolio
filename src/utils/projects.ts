@@ -1,4 +1,4 @@
-﻿export type Project = {
+export type Project = {
   id: number;
   i18nKey: string;
   tags: string[];
@@ -35,5 +35,12 @@ export const projects: Project[] = [
     tags: ['React', 'Hooks', 'Finance'],
     link: 'https://carlosarce10-control-gastos.netlify.app/',
     img: 'https://placehold.co/600x400/1a1a1a/FFF?text=Gastos',
+  },
+  {
+    id: 5,
+    i18nKey: 'p5',
+    tags: ['React', 'Hooks', 'Fitness'],
+    link: 'https://lomito-train.netlify.app/',
+    img: 'https://placehold.co/600x400/1a1a1a/FFF?text=Gym+Train',
   },
 ];

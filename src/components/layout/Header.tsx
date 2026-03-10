@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="nav">
-        <div className="nav__brand">
+        <div className={`nav__brand${open ? ' nav__brand--hidden' : ''}`}>
           <Link to="/">my-portafolio</Link>
         </div>
 
@@ -48,15 +48,13 @@ export default function Header() {
           ))}
         </div>
 
-        <div className="nav__controls">
-          {/* Switch de idioma */}
-          <button className="btn btn--ghost" onClick={toggleLang} aria-label="Language">
+        <div className={`nav__controls${open ? ' nav__controls--open' : ''}`}>
+          <button className="btn btn--ghost nav__util" onClick={toggleLang} aria-label="Language">
             {i18n.language.startsWith('es') ? 'EN' : 'ES'}
           </button>
 
-          {/* Switch de tema claro/oscuro (usa tu store existente) */}
           <button
-            className="btn btn--ghost"
+            className="btn btn--ghost nav__util"
             onClick={toggle}
             aria-label="Toggle theme"
             title={theme === 'light' ? 'Dark mode' : 'Light mode'}
@@ -65,7 +63,7 @@ export default function Header() {
           </button>
 
           <button className="btn btn--ghost nav__toggle" onClick={() => setOpen((v) => !v)} aria-label="Menú">
-            ☰
+            {open ? '✕' : '☰'}
           </button>
         </div>
       </nav>
